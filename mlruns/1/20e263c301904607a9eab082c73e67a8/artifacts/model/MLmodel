@@ -1,0 +1,25 @@
+artifact_path: model
+flavors:
+  python_function:
+    env: conda.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    python_version: 3.7.3
+  sklearn:
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 0.23.2
+run_id: 20e263c301904607a9eab082c73e67a8
+saved_input_example_info:
+  artifact_path: input_example.json
+  pandas_orient: split
+  type: dataframe
+signature:
+  inputs: '[{"name": "PassengerId", "type": "long"}, {"name": "Pclass", "type": "long"},
+    {"name": "Name", "type": "string"}, {"name": "Sex", "type": "string"}, {"name":
+    "Age", "type": "double"}, {"name": "SibSp", "type": "long"}, {"name": "Parch",
+    "type": "long"}, {"name": "Ticket", "type": "string"}, {"name": "Fare", "type":
+    "double"}, {"name": "Cabin", "type": "string"}, {"name": "Embarked", "type": "string"},
+    {"name": "title", "type": "string"}]'
+  outputs: null
+utc_time_created: '2021-04-05 15:16:40.427102'
